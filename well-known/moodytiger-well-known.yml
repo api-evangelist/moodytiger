@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://moodytiger.com/.well-known/*
+host: https://moodytiger.com
+notes: >-
+  moodytiger.com is a Shopify-hosted storefront. The openid-configuration and
+  oauth-authorization-server documents are Shopify's Customer Account API OIDC
+  discovery served on the store domain (issuer shopify.com/authentication/47569207457);
+  scopes include customer-account-api and customer-account-mcp-api. The ucp document
+  is the store's Universal Commerce Protocol (ucp.dev) merchant profile advertising an
+  agent-facing MCP shopping endpoint.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: moodytiger-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: moodytiger-oauth-authorization-server.json
+- path: /.well-known/ucp
+  status: 200
+  file: moodytiger-ucp.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

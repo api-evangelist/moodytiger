@@ -1,8 +1,27 @@
 aid: moodytiger
 name: moodytiger
-description: moodytiger is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  moodytiger is a technology-driven, design-led activewear brand for kids, offering
+  leggings, shorts, tees, skirts and outerwear for boys and girls. Surfaced as a
+  portfolio company of Qiming Venture Partners, its direct-to-consumer storefront runs
+  on Shopify at moodytiger.com. The store has no bespoke first-party developer API, but
+  it does expose a modern agent-native commerce surface: a published Universal Commerce
+  Protocol (UCP, ucp.dev) MCP shopping endpoint, an /agents.md agent-instructions
+  document mirrored at /llms.txt, and Shopify Customer Account OIDC discovery under
+  /.well-known/. This profile captures those verifiable agent and well-known surfaces.
 url: https://raw.githubusercontent.com/api-evangelist/moodytiger/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: http://moodytiger.com/cdn/shop/files/1200_628.jpg?v=1684201715
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Retail
+- E-Commerce
+- Apparel
+- Kids Activewear
+- Agentic Commerce
+- Universal Commerce Protocol
+- MCP
+- Shopify
+apis:
+- name: moodytiger UCP Commerce (MCP)
+  description: >-
+    Agent-facing shopping surface for the moodytiger Shopify store implemented with the
+    Universal Commerce Protocol (UCP). Agents discover capabilities at /.well-known/ucp
+    and transact (catalog search, cart, checkout, fulfillment, order) over the MCP endpoint,
+    with buyer approval required at payment.
+  humanURL: https://moodytiger.com/agents.md
+  baseURL: https://moodytiger.com/api/ucp/mcp
+  tags:
+  - Agentic Commerce
+  - MCP
+  - Universal Commerce Protocol
+  properties:
+  - type: MCPServer
+    url: mcp/moodytiger-mcp.yml
+  - type: AgentSkill
+    url: skills/_index.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +67,28 @@ maintainers:
 common:
 - type: Website
   url: https://moodytiger.com
+- type: WellKnown
+  url: well-known/moodytiger-well-known.yml
+- type: MCPServer
+  url: mcp/moodytiger-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/moodytiger-llms.txt
+- type: DomainSecurity
+  url: security/moodytiger-domain-security.yml
+- type: Documentation
+  url: https://moodytiger.com/agents.md
+- type: Blog
+  url: https://moodytiger.com/blogs/news
+- type: Support
+  url: https://moodytiger.com/pages/contact-us
+- type: PrivacyPolicy
+  url: https://moodytiger.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://moodytiger.com/policies/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

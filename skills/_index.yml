@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://moodytiger.com/agents.md
+notes: >-
+  moodytiger publishes a provider-authored agent skill / instructions document at
+  /agents.md (mirrored verbatim at /llms.txt), captured here as moodytiger-agents.md.
+  It instructs AI shopping agents to transact via the Universal Commerce Protocol MCP
+  endpoint or the Shop skill (https://shop.app/SKILL.md), and documents read-only
+  browsing routes. Not grounded in a first-party OpenAPI; the operations reference the
+  UCP shopping tools.
+skills:
+- file: moodytiger-agents.md
+  name: Agent Instructions — moodytiger
+  api: mcp/moodytiger-mcp.yml
+  operations: [search_catalog, create_cart, create_checkout, update_checkout, complete_checkout]
+  source: https://moodytiger.com/agents.md
