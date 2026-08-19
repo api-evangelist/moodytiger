@@ -3,19 +3,19 @@ method: searched
 status: published
 source: https://moodytiger.com/agents.md
 discovery: https://moodytiger.com/.well-known/ucp
-notes: >-
-  moodytiger's Shopify storefront exposes an agent-facing commerce MCP server via the
-  Universal Commerce Protocol (UCP, https://ucp.dev). The MCP endpoint is documented in
-  /agents.md and advertised in /.well-known/ucp. tools/list requires an agent profile URI
-  (agent identity), so the tool schemas could not be enumerated anonymously; the tools and
-  capabilities below are transcribed from the store's own /agents.md agent flow and the UCP
-  merchant profile capability set. This is a platform (Shopify UCP) MCP surface, not a
-  bespoke first-party API.
+notes: moodytiger's Shopify storefront exposes an agent-facing commerce MCP server via the Universal Commerce
+  Protocol (UCP, https://ucp.dev). The MCP endpoint is documented in /agents.md and advertised in /.well-known/ucp.
+  tools/list requires an agent profile URI (agent identity), so the tool schemas could not be enumerated
+  anonymously; the tools and capabilities below are transcribed from the store's own /agents.md agent
+  flow and the UCP merchant profile capability set. This is a platform (Shopify UCP) MCP surface, not
+  a bespoke first-party API.
 server:
   name: moodytiger UCP Shopping
   protocol: Universal Commerce Protocol (UCP)
   ucp_version: '2026-04-08'
-  supported_versions: ['2026-04-08', '2026-01-23']
+  supported_versions:
+  - '2026-04-08'
+  - '2026-01-23'
   transport: http
   url: https://moodytiger.com/api/ucp/mcp
   canonical_url: https://moody-tiger-athletics.myshopify.com/api/ucp/mcp
@@ -47,3 +47,11 @@ tools:
 - name: complete_checkout
   description: Finalize the purchase; buyer must approve payment.
   source: agents.md agent flow / dev.ucp.shopping.checkout
+deployment:
+  mode: remote
+  endpoint: https://moodytiger.com/api/ucp/mcp
+  verified: probed
+  probe: live
+  tools: 13
+  checked: '2026-08-12'
+  source: catalog MCP census
