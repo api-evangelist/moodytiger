@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/moodytiger/integrations
+- https://n8n.io/integrations/moodytiger/
+- https://composio.dev/toolkits/moodytiger
+- https://monid.ai/tools/moodytiger
+checked:
+- https://composio.dev/toolkits/moodytiger
+- https://monid.ai/tools/moodytiger
+- https://n8n.io/integrations/moodytiger/
+- https://zapier.com/apps/moodytiger/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
