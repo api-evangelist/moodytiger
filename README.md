@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-moodytiger is a company surfaced as a portfolio company of qiming and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+moodytiger is a technology-driven, design-led activewear brand for kids, offering leggings, shorts, tees, skirts and outerwear for boys and girls. Surfaced as a portfolio company of Qiming Venture Partners, its direct-to-consumer storefront runs on Shopify at moodytiger.com. The store has no bespoke first-party developer API, but it does expose a modern agent-native commerce surface: a published Universal Commerce Protocol (UCP, ucp.dev) MCP shopping endpoint, an /agents.md agent-instructions document mirrored at /llms.txt, and Shopify Customer Account OIDC discovery under /.well-known/. This profile captures those verifiable agent and well-known surfaces.
 
-Backed by: qiming — https://moodytiger.com
+**Areas:** Company · Retail · E-Commerce · Apparel · Kids Activewear · Agentic Commerce · Universal Commerce Protocol · MCP · Shopify
+
+## moodytiger on APIs.io
+
+Everything profiled for moodytiger is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/moodytiger/](https://apis.io/providers/moodytiger/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [moodytiger UCP Commerce (MCP)](https://apis.io/apis/moodytiger/moodytiger-ucp-commerce-mcp/) — Agent-facing shopping surface for the moodytiger Shopify store implemented with the Universal Commerce Protocol (UCP). Agents discover capabilities at…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [moodytiger UCP Shopping](https://apis.io/servers/moodytiger/moodytiger-ucp-shopping/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Moodytiger Domain Security](https://apis.io/security/moodytiger/moodytiger-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://moodytiger.com)
+- [Documentation](https://moodytiger.com/agents.md)
+- [Support](https://moodytiger.com/pages/contact-us)
+- [Blog](https://moodytiger.com/blogs/journal)
+- [Terms of service](https://moodytiger.com/policies/terms-of-service)
+- [Privacy policy](https://moodytiger.com/policies/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 17.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 17.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | platform (partial credit) |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/moodytiger/](https://apis.io/providers/moodytiger/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for moodytiger: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/moodytiger/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
